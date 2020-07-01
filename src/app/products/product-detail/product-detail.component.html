@@ -1,0 +1,36 @@
+<div class='card' *ngIf='product'>
+  <div class='card-header'>
+    {{ pageTitle + ': ' + product.productName }}
+  </div>
+  <div class='card-body'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-sm'> Name: </div>
+        <div class='col-sm'> {{ product.productName }} </div>
+      </div>
+      <div class='row'>
+        <div class='col-sm'> Code: </div>
+        <div class='col-sm'> {{ product.productCode }} </div>
+      </div>
+      <div class='row'>
+        <div class='col-sm'> Date: </div>
+        <div class='col-sm'> {{ product.releaseDate }} </div>
+      </div>
+      <div class='row'>
+        <div class='col-sm'> Price: </div>
+        <div class='col-sm'> {{ product.price }} </div>
+      </div>
+      <div class='row'>
+        <div class='col-sm'> Description: </div>
+        <div class='col-sm'> {{ product.description }} </div>
+      </div>
+    </div>
+
+  </div>
+  <div class='card-footer'>
+    <button class='btn btn-outline-secondary' (click)='onBack()' style='width:80px'>
+      <i class='fa fa-chevron-left'></i> Back
+    </button>
+
+  </div>
+</div>
